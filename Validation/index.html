@@ -6,28 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Validation</title>
     <style>
-        input{font-size :20px; margin-top: 10px;}
+        input { font-size: 20px; margin-top: 10px; }
     </style>
-    <script src = "javascript.js"></script>
-    
-
-    
+    <script src="javascript.js"></script>
 </head>
 <body>
-    <form action="" onsubmit="return valid();">
-        <input type = "text" id ="uname" placeholder="Enter user name">
+    <form onsubmit="return valid();">
+        <input type="text" id="uname" placeholder="Enter username">
         <br>
-        <span id ="uname_err" style ="color :red;visibility:hidden;">Please Enter User Name</span><br>
-        <input type = "text" id = "pass1"placeholder ="Enter Password">
+        <span id="uname_err" style="color: red; visibility: hidden;">Please enter a username</span><br>
+        <input type="password" id="pass" placeholder="Enter password">
         <br>
-        <span id ="passwd_err1" style ="color :red;visibility:hidden;">Please Enter Password</span><br>
-        <input type = "text" id = "pass2"placeholder ="Enter Confirm Password">
+        <span id="pass_err" style="color: red; visibility: hidden;">Please enter a password</span><br>
+        <input type="password" id="cpass" placeholder="Confirm password">
         <br>
-        <span id ="passwd_err2" style ="color :red;visibility:hidden;">Please Enter Password</span><br>
-
-        
-        <input type = "submit">
+        <span id="pass_err_length" style="color: red; visibility: hidden;">Please enter a password with at least 6 characters</span><br>
+        <input type="submit">
     </form>
-
 </body>
 </html>
