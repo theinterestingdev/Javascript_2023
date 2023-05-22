@@ -9,13 +9,13 @@
     <script>
     $(document).ready(function(){
 
-        $("#hide").click(function(){
-            $("p").hide(3000);
+        $("#show").click(function(){
+            $("p").toggle(3000);
         });
 
-        $("#show").click(function(){
-            $("p").show(3000);
-        });
+        // $("#show").click(function(){
+        //     $("p").show(3000);
+        // });
         
     });
     </script>
@@ -28,8 +28,7 @@
     <p>This is a sample paragraph 4.</p>
     <p>This is a sample paragraph 5.</p>
     
-    <button id="hide">Hide Paragraph</button>
-    <button id="show">Show</button>
+    <button id="show">Hide/Show</button>
 
 </body>
 </html>
